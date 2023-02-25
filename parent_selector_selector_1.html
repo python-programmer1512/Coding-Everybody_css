@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*
+        두개를 띄어쓰기로 이어쓰면 부모 안의 자식값을 설정할수있게됨
+        띄어쓰기는 해당되는 구간의 모든 자식들에게 적용됨
+        > 는 바로 아래 자손만 선택
+        ,는 and의 의미로 둘다 같은 값이 적용됨
+
+        */
+        .lecture>li{
+            border:1px solid red;
+        }
+        
+        ol li{
+            border:1px solid blue;
+            color:green;
+        }
+        ul{
+            background-color: powderblue;
+        }
+        ol{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+    <ol>
+        <li>HTML</li>
+        <li>
+            CSS
+            <ol>
+                <li>selector</li>
+                <ul>
+                    <li>asd</li>
+                </ul>
+                <li>declaration</li>
+            </ol>
+        </li>
+        <li>JS</li>
+    </ol>
+    
+    <ol class="lecture">
+        <li>A</li>
+        <li>
+            B
+            <ol>
+                <li>C</li>
+                <li>D</li>
+            </ol>
+        </li>
+        <li>E</li>
+    </ol>
+
+</body>
+</html>
