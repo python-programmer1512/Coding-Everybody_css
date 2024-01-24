@@ -1,0 +1,41 @@
+
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+
+}
+#article{
+    padding-left: 25px;
+}
+h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0px;
+    padding: 20px;
+}
+
+#grid ol {
+    width: 100px;
+    padding-top: 20px;
+    border-right:  1px solid gray;
+    margin: 0px;
+}
+@media(max-width:800px){ /* 화면 사이즈가 800보다 작을때 사라짐*/
+    #grid {
+        display: block;
+    }
+    h1 {
+        font-size: 45px;
+        text-align: center;
+        border-bottom: none;
+        margin: 0px;
+        padding: 20px;
+    }
+    #grid ol {
+        width: 100px;
+        padding-top: 20px;
+        border-right: none;
+        margin: 0px;
+    }
+}

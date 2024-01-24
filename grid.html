@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid {
+            border: 5px solid pink;
+            display: grid; /* grid 는 무조건 있어야 됨*/
+            grid-template-columns: 150px 1fr; 
+            /* 그리드 열에 대한 원소별 크기 설정, 처음꺼는 150px 차지하고 두번째는 150부터 150+10까지 차지, 1fr 는 끝까지를 의미*/
+            /* fr 은 상대값(k)로 2fr 1fr 을 두면 전체 3fr 에 대해 2대 1로 비율을 나눈다는 의미임, fr은 fr단위만 합침*/
+        }
+        div {
+            border: 5px solid gray;
+        }
+
+    </style>
+    <!--div 은 블록 엘리먼트라 줄바꿈됨, span 은 inline 엘리먼트라 이어서 써짐-->
+</head>
+<body>
+    <div id="grid">
+        <div>navigation</div> 
+        <div>sflghsdflgkjhsdflgkjhsdglkjhsdflkgjhsdflkgjhf
+            sdlkjghsflghsdflgkjhsdflgkjhsd
+            glkjhsdflkgjhsdflkgjhfsdlkjghsflghsdflgkjhsd
+            flgkjhsdglkjhsdflkgjhsdflkgjhfsdlk
+            jghsflghsdflgkjhsdflgkjhsdglkjhsdfl
+            kgjhsdflkgjhfsdlkjgh</div>
+
+    </div>
+
+    
+</body>
+</html>

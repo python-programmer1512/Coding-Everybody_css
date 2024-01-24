@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+         border : 태그가 어느정도의 부피를 가지는 확인
+        -->
+    <style>
+        /*
+        css 주석
+        ########
+        화면 전체를 차지하는 border : block level element(tag)
+        자기 자신만을 차지하는 border : inline elemnet
+        display : 형식 변경, block<->inline block은 한칸을 다쓰는거, inline 은 단어가 끝나면 차지하는 범위가 끝
+        display : none -> 안보이게 하기
+        ,를 통해 중복인 것들을 한번으로 퉁칠 수 있음
+        border-width:5px; 사각형 두께
+        border-color: red; 사각형 색
+        border-style: solid; 사각형 선의 상태(실선)
+        도 되지만 border: 5px red solid; 이렇게 해도 됨
+        
+        */
+        h1 { /* 여기서도 순서에 영향이 있음*/
+            /*
+            border: 5px red solid;
+            padding: 20px;*/ /* 상하좌우 모두 20px 만큼 띄우기, 택스트를 둘러싸고 있는 사각형이 텍스트와 20px 만큼 떨어짐 */
+            /*margin: 20px;*/ /* 공간 띄우기 문단과 문단 사이를 띄우는거라고 보면 됨 */
+            /*width: 100px;*/ /* 상자 크기 설정 */
+            
+            font-size: 45px;
+            text-align: center; /* 정렬*/
+            border-bottom: 1px solid gray;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        h2, a{
+            border-width: 5px;
+            border-color: red;
+            border-style: solid;
+ 
+        }
+        h2{
+            display:inline;
+        }
+        a{
+            display:block;
+        }
+        ol{
+            width: 100px;
+            padding-top: 20px;
+            border-right:  1px solid gray;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Python</h1>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+</body>
+</html>

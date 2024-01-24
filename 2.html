@@ -1,0 +1,36 @@
+<!-- 한글이 깨질경우 -->
+<meta charset="utf-8">
+<head>
+    <title>Document</title>
+    <!-- 아래로 갈수록 우순순위가 높아짐 
+    class : ., id : # class보다 id가 우선순위가 높음, 같은 우선순위 에선 밑에 있는 애가 더 높음
+    id는 전 문서를 통틀어 해당 이름으로 하나만 존재해야된다. 즉 id active 는 다른 id active 가 존재할 수 없음
+-->
+    <style>
+
+        a {
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 45px;
+            text-align: center;
+        }
+        #active {
+            color : red;
+        }
+        .saw {
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>WEB</h1>
+    <ol>
+        <li>
+            <a href="1.html" class="saw" id="active">sfddsfsdf</a>
+        </li>
+        <li>
+            <a href="1.html" style="color:aqua">ads3f12e</a>
+        </li>
+    </ol>
+</body>
